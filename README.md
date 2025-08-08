@@ -1,10 +1,16 @@
+# Meu Primeiro Site
 
-🚀 Tecnologias Utilizadas
+Este é o meu primeiro projeto de site, construído do zero utilizando **HTML** e **CSS**. Ele serve como um portfólio inicial e uma prova do meu aprendizado nas tecnologias web fundamentais.
 
+---
 
-HTML: Para a estrutura do site.
-CSS: Para a estilização e design.
+### Tecnologias Utilizadas
 
-🤝 Contribuições
+* HTML
+* CSS
 
-Este é um projeto de aprendizado
+---
+
+### Como Rodar o Projeto
+
+Simplesmente abra o arquivo `index.html` em seu navegador para visualizar o site.
