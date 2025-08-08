@@ -1,16 +1,11 @@
-# Meu Primeiro Site
+🚀 Meu Primeiro Site 🌐
 
-Este é o meu primeiro projeto de site, construído do zero utilizando **HTML** e **CSS**. Ele serve como um portfólio inicial e uma prova do meu aprendizado nas tecnologias web fundamentais.
+Este é o meu primeiro projeto de site, construído do zero utilizando HTML e CSS. Ele serve como um portfólio inicial e uma prova do meu aprendizado nas tecnologias web fundamentais. ✨
 
----
+🛠️ Tecnologias Utilizadas
+HTML 📄
 
-### Tecnologias Utilizadas
+CSS 🎨
 
-* HTML
-* CSS
-
----
-
-### Como Rodar o Projeto
-
-Simplesmente abra o arquivo `index.html` em seu navegador para visualizar o site.
+💻 Como Rodar o Projeto
+Basta abrir o arquivo index.html 📁 no seu navegador para visualizar o site. 🖥️
