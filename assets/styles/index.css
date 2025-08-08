@@ -11,43 +11,96 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    line-height: 2;
+    line-height: 1.6;
+    background-color: #F4F6F8; /* Cinza bem claro */
+    color: #34495E; /* Cinza-azulado escuro para o texto */
 }
 
-
-
 header {
-background-color: #000000;
-color: rgb(252, 255, 230);
-padding: 80px;
-text-align: center;
-
+    background-color: #2C3E50; /* Azul marinho elegante */
+    color: #FFFFFF; /* Texto branco */
+    padding: 80px;
+    text-align: center;
 }
 
 main {
-background-color: rgb(253, 253, 253);
-  flex: 1;
-  padding: 48px 38px;
+    background-color: #F4F6F8; /* Fundo principal igual ao body */
+    flex: 1;
+    padding: 48px 38px;
 }
 
 #sobre-mim {
     display: block;
-    background-color: #386eec;
+    background-color: #FFFFFF; /* Fundo branco para seções */
     width: 80%;
     margin: 0 auto;
     padding: 40px;
     border-radius: 25px;
-    color:rgb(0, 0, 0);
+    color: #34495E; 
+    margin-bottom: 40px;
 }
 
-#titulo-sobre-mim {
-  font-size: 26px;
-  margin-bottom: 160x;
-  border-bottom: 2px solid rgb(59, 36, 36);
-  margin-bottom: 30px;
-
+#sobre-mim h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #E67E22; 
+    padding-bottom: 10px;
+    color: #2C3E50; 
 }
 
 .texto-sobre-mim{
-   font-size: 20px;
+    font-size: 20px;
+}
+
+strong {
+    color: #E67E22; 
+}
+
+#meus-hobbies {
+    background-color: #FFFFFF; 
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 16px;
+    color: #34495E; 
+}
+
+#titulo-meus-hobies{
+    font-size: 26px;
+    margin-bottom: 20px; 
+    border-bottom: 2px solid #E67E22; 
+    padding-bottom: 10px; 
+    display: flex;
+    gap: 12px;
+    color: #2C3E50; 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 16px;
+}
+
+li {
+    
+    background-color: #F4F6F8; 
+    padding: 17px;
+    border-left: 4px solid #E67E22; 
+    border-radius: 6px;
+    font-size: 20px; 
+    min-width: 250px;
+    color: #34495E;
+    transition: all 0.3s ease;
+    
+}
+
+li:hover {
+    font-size: 20px; 
+    background-color: #E67E22; 
+    color: #FFFFFF; 
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
