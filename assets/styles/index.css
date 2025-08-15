@@ -44,14 +44,14 @@ main { /* Estiliza o conteúdo principal */
 
 #sobre-mim h2 { /* Estiliza o cabeçalho `h2` dentro da seção "sobre-mim" */
     font-size: 27px; /* Define o tamanho da fonte */
-    margin-bottom: 20px; /* Adiciona uma margem de 20 pixels na parte inferior */
+    margin-bottom: 10px; /* Adiciona uma margem de 20 pixels na parte inferior */
     border-bottom: 2px solid #E67E22; /* Adiciona uma borda inferior laranja */
     padding-bottom: 10px; /* Adiciona espaçamento interno na parte inferior do título */
     color: #2C3E50; /* Define a cor do texto do cabeçalho */
 }
 
-    texto-sobre-mim{ /* Estiliza o elemento `texto-sobre-mim` */
-    font-size: 30px; /* Define o tamanho da fonte */
+    texto-sobre-mim { 
+    font-size: 25px; /* Define o tamanho da fonte */
 }
 
 strong { 
@@ -141,7 +141,7 @@ li:hover { /* Estiliza os itens da lista quando o mouse passa sobre eles */
 #contato a:hover{
     background-color: #4169e1;
     color: #FFFFFF;
-    transform: translateY(-2px);
+    transform: translateY(-6px);
 
 }
 
