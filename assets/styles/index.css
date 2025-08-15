@@ -144,3 +144,15 @@ li:hover { /* Estiliza os itens da lista quando o mouse passa sobre eles */
     transform: translateY(-2px);
 
 }
+
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+footer p {
+    font-size: 2rem;
+}
