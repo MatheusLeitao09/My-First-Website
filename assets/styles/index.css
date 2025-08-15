@@ -1,106 +1,146 @@
-/* RESET DO CSS */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap'); /* Importa a fonte "Nunito" do Google Fonts */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* RESET DO CSS */ /* Início da seção de reset de estilos */
+
+*{ /* Aplica as seguintes regras a todos os elementos */
+    margin: 0; /* Remove a margem padrão externa */
+    padding: 0; /* Remove o espaçamento interno (padding) padrão */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura e altura */
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    line-height: 1.6;
-    background-color: #F4F6F8; /* Cinza bem claro */
-    color: #34495E; /* Cinza-azulado escuro para o texto */
+body{ /* Estiliza o corpo do documento HTML */
+    font-family: Nunito, Arial, Helvetica, sans-serif; /* Define a fonte do texto */
+    display: flex; /* Torna o body um container flexível */
+    flex-direction: column; /* Alinha os itens flexíveis em uma coluna (verticalmente) */
+    min-height: 100vh; /* Define a altura mínima do corpo para 100% da altura da tela */
+    line-height: 1.6; /* Define a altura da linha do texto */
+    background-color: #F4F6F8; /* Define a cor de fundo do corpo para um cinza claro */
+    color: #34495E; /* Define a cor padrão do texto para um cinza-azulado escuro */
 }
 
-header {
-    background-color: #2C3E50; /* Azul marinho elegante */
-    color: #FFFFFF; /* Texto branco */
-    padding: 80px;
+header { /* Estiliza o cabeçalho */
+    background-color: #2C3E50; /* Define a cor de fundo do cabeçalho */
+    color: #FFFFFF; /* Define a cor do texto do cabeçalho como branco */
+    padding: 80px; /* Adiciona espaçamento interno de 80 pixels */
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+main { /* Estiliza o conteúdo principal */
+    background-color: #d4d4d4; /* Define a cor de fundo do main */
+    flex: 1; /* Permite que o main cresça e ocupe o espaço disponível */
+    padding: 48px 38px; /* Adiciona espaçamento interno nas laterais e no topo/fundo */
+}
+
+#sobre-mim { /* Estiliza o elemento com o ID "sobre-mim" */
+    display: block; /* Garante que o elemento seja um bloco */
+    background-color: #FFFFFF; /* Define a cor de fundo como branca */
+    width: 80%; /* Define a largura para 80% do contêiner pai */
+    margin: 0 auto; /* Centraliza o elemento horizontalmente */
+    padding: 40px; /* Adiciona espaçamento interno de 40 pixels */
+    border-radius: 25px; 
+    color: #34495E; /* Define a cor do texto */
+    margin-bottom: 40px; /* Adiciona uma margem de 40 pixels na parte inferior */
+}
+
+#sobre-mim h2 { /* Estiliza o cabeçalho `h2` dentro da seção "sobre-mim" */
+    font-size: 27px; /* Define o tamanho da fonte */
+    margin-bottom: 20px; /* Adiciona uma margem de 20 pixels na parte inferior */
+    border-bottom: 2px solid #E67E22; /* Adiciona uma borda inferior laranja */
+    padding-bottom: 10px; /* Adiciona espaçamento interno na parte inferior do título */
+    color: #2C3E50; /* Define a cor do texto do cabeçalho */
+}
+
+    texto-sobre-mim{ /* Estiliza o elemento `texto-sobre-mim` */
+    font-size: 30px; /* Define o tamanho da fonte */
+}
+
+strong { 
+    color: #E67E22; /* Define a cor do texto para laranja */
+}
+
+#meus-hobbies { /* Estiliza o elemento com o ID "meus-hobbies" */
+    background-color: #FFFFFF; /* Define a cor de fundo como branca */
+    width: 80%; /* Define a largura como 80% */
+    margin: 0 auto; /* Centraliza o elemento horizontalmente */
+    padding: 40px; /* Adiciona espaçamento interno de 40 pixels */
+    border-radius: 12px; /* Arredonda as bordas */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Adiciona uma sombra sutil */
+    margin-bottom: 16px; /* Adiciona uma margem de 16 pixels na parte inferior */
+    color: #34495E; /* Define a cor do texto */
+    
+}
+
+#titulo-meus-hobbies{ 
+    font-size: 27px; /* Define o tamanho da fonte */
+    margin-bottom: 20px; /* Adiciona uma margem de 20 pixels na parte inferior */
+    border-bottom: 2px solid #E67E22; /* Adiciona uma borda inferior laranja */
+    padding-bottom: 10px; /* Adiciona espaçamento interno na parte inferior */
+    display: flex; /* Torna o elemento um container flexível */
+    gap: 12px; /* Define o espaço entre os itens flexíveis */
+    color: #34495E; /* Define a cor do texto como preto */
+}
+
+ul { /* Estiliza as listas não ordenadas `<ul>` */
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o espaçamento interno padrão */
+    display: grid; /* Torna a lista um container de grade */
+    gap: 16px; /* Define o espaço entre os itens da grade */
+}
+
+li { /* Estiliza os itens da lista `<li>` */
+    background-color: #F4F6F8; /* Define a cor de fundo como cinza claro */
+    padding: 17px; /* Adiciona espaçamento interno de 17 pixels */
+    border-left: 4px solid #E67E22; /* Adiciona uma borda esquerda laranja */
+    border-radius: 6px; /* Arredonda as bordas */
+    font-size: 19px; /* Define o tamanho da fonte */
+    min-width: 250px; /* Define a largura mínima */
+    color: #34495E; /* Define a cor do texto */
+    transition: all 0.3s ease; /* Adiciona uma transição suave para as mudanças de estilo */
+}
+
+li:hover { /* Estiliza os itens da lista quando o mouse passa sobre eles */
+    font-size: 17px; /* Muda o tamanho da fonte */
+    background-color: #E67E22; /* Muda a cor de fundo para laranja */
+    color: #FFFFFF; /* Muda a cor do texto para branco */
+    transform: translateY(-5px); /* Move o item 5 pixels para cima */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para um efeito de elevação */
+}
+
+#contato { /* Estiliza o elemento com o ID "contato" */
+    background-color: rgb(255, 255, 255); /* Define a cor de fundo como branca */
+    width: 80%; /* Define a largura como 80% */
+    margin: 0 auto; /* Centraliza o elemento horizontalmente */
+    padding: 40px; /* Adiciona espaçamento interno de 40 pixels */
+    border-radius: 12px; /* Arredonda as bordas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    margin-bottom: 16px; /* Adiciona uma margem de 16 pixels na parte inferior */
+}
+
+#contato h3 { /* Estiliza o cabeçalho `h3` dentro da seção "contato" */
+    margin-bottom: 8px; /* Adiciona uma margem de 8 pixels na parte inferior */
+    font-size: 25px; /* Define o tamanho da fonte */
     text-align: center;
 }
 
-main {
-    background-color: #F4F6F8; /* Fundo principal igual ao body */
-    flex: 1;
-    padding: 48px 38px;
-}
+#contato p { /* Estiliza os parágrafos `<p>` dentro da seção "contato" */
+    font-size: 22px; /* Define o tamanho da fonte */
+    text-align: center;}
 
-#sobre-mim {
-    display: block;
-    background-color: #FFFFFF; /* Fundo branco para seções */
-    width: 80%;
-    margin: 0 auto;
-    padding: 40px;
-    border-radius: 25px;
-    color: #34495E; 
-    margin-bottom: 40px;
-}
-
-#sobre-mim h2 {
-    font-size: 26px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #E67E22; 
-    padding-bottom: 10px;
-    color: #2C3E50; 
-}
-
-.texto-sobre-mim{
-    font-size: 20px;
-}
-
-strong {
-    color: #E67E22; 
-}
-
-#meus-hobbies {
-    background-color: #FFFFFF; 
-    width: 80%;
-    margin: 0 auto;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    margin-bottom: 16px;
-    color: #34495E; 
-}
-
-#titulo-meus-hobies{
-    font-size: 26px;
-    margin-bottom: 20px; 
-    border-bottom: 2px solid #E67E22; 
-    padding-bottom: 10px; 
-    display: flex;
-    gap: 12px;
-    color: #2C3E50; 
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    gap: 16px;
-}
-
-li {
-    
-    background-color: #F4F6F8; 
-    padding: 17px;
-    border-left: 4px solid #E67E22; 
-    border-radius: 6px;
-    font-size: 20px; 
-    min-width: 250px;
-    color: #34495E;
+#contato a {
+    color: #4169e1;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1;
+    margin: 0.05rem;
+    border: 2px solid #4169e1;
+    border-radius: 20px;
+    display: inline-block;
     transition: all 0.3s ease;
-    
 }
 
-li:hover {
-    font-size: 20px; 
-    background-color: #E67E22; 
-    color: #FFFFFF; 
-    transform: translateY(-5px); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+#contato a:hover{
+    background-color: #4169e1;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+
 }
